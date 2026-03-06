@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap");
 
-/* ===========================================
-   Base Styles & Variables
+/*Base Styles & Variables
    =========================================== */
 :root {
-  --bg-color: #1f242d;
-  --second-bg-color: #323946;
-  --text-color: #fff;
-  --main-color: #0ef;
+  --bg-color: #0b1120;        /* Deep Midnight Navy */
+  --second-bg-color: #111b2d; /* Slightly lighter Navy */
+  --text-color: #f8fafc;      /* Soft off-white */
+  --main-color: #e2b850;      /* Professional Muted Gold */
   --transition: 0.3s ease;
 }
 
@@ -19,8 +18,58 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  /* Body text remains in Outfit (Elegant/Slim) */
+  font-family: "Outfit", sans-serif;
+  font-weight: 300; 
 }
+
+/* BRANDING: Specifically using Outfit for the Logo */
+.logo {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 2.6rem;
+  color: var(--text-color); /* Kept your white */
+}
+
+.logo span {
+  font-weight: 500;
+  color: var(--main-color); /* Kept your gold/muted grey */
+}
+
+/* HEADERS: Using Geist for that professional, crisp look */
+h1, h2, h3, .heading, .home-content h1 {
+  font-family: "Geist", sans-serif !important;
+  font-weight: 500 !important; /* Balanced weight: clear but slim */
+  color: var(--text-color); /* Forced to stay white */
+}
+
+/* YOUR NAME: Appropriately sized and crisp */
+.home-content h1 {
+  font-size: 5.2rem;
+  line-height: 1.1;
+  margin: 0.8rem 0;
+}
+
+/* NAVIGATION: Using Outfit to match the logo style */
+.navbar a {
+  font-family: "Outfit", sans-serif !important;
+  /* Increase from 1.7rem to 1.9rem for better visibility */
+  font-size: 1.9rem; 
+  /* Weight 400 makes it clear without being 'fat' */
+  font-weight: 400; 
+  color: var(--text-color);
+  margin-left: 4rem; /* Adds a bit more 'air' between options */
+  transition: var(--transition);
+  /* A tiny bit of letter spacing makes it look more premium */
+  letter-spacing: 0.5px; 
+}
+
+/* Hover effect to show the gold color clearly */
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
 
 html {
   font-size: 62.5%; /* 10px */
@@ -32,6 +81,8 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ===========================================
@@ -82,7 +133,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
+  padding: 2.5rem 9%;
   background: var(--bg-color);
   z-index: 100;
   display: flex;
