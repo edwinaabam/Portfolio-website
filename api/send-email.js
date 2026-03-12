@@ -21,7 +21,7 @@ export default async function handler(req, res) {
       from: 'Portfolio Form <onboarding@resend.dev>',
       
       // This is your personal email where you receive the message
-      to: 'francisaffulgyan@gmail.com', 
+      to: 'abam.edwina@gmail.com', 
       
       subject: `New Message from ${name} (Portfolio)`,
       reply_to: email, 

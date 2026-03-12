@@ -32,7 +32,7 @@
 }
 
 .logo span {
-  font-weight: 500;
+  font-weight: 400;
   color: var(--main-color); /* Kept your gold/muted grey */
 }
 
@@ -928,7 +928,7 @@ section {
 
 .recommendation-metric {
     margin-top: 1.5rem;
-    font-weight: bold;
+    font-weight: normal;
     color: var(--main-color);
     background: rgba(255, 255, 255, 0.05);
     padding: 1.5rem;
@@ -936,4 +936,30 @@ section {
     display: block;
     font-size: 1.6rem;
     border: 1px solid var(--main-color);
+}
+
+.recommendation-metric strong {
+    font-weight: 700;
+}
+
+/* FIX FOR INDIVIDUAL PROJECT PAGE IMAGE */
+
+/* Update this specific block at the bottom of your style.css */
+.image-wrapper {
+    width: 100%;           /* Takes up all available horizontal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    border: .2rem solid var(--main-color);
+    margin-bottom: 4rem;
+    overflow: hidden;
+    background: var(--second-bg-color);
+}
+
+.image-wrapper .project-img {
+    width: 100%;           /* Forces the image to be as wide as the wrapper */
+    height: auto;          /* Keeps the aspect ratio perfect */
+    display: block;
+    object-fit: cover;     /* Ensures it fills every corner of the gold border */
 }
