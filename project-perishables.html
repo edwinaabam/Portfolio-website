@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perishable Demand Predictor - Edwina B. Abam</title>
     
-    <!-- VERCEL ANALYTICS SCRIPT -->
     <script>
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script src="/_vercel/insights/script.js"></script>
     
-    <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="breakpoint.css">
 </head>
 <body>
 
-    <!-- Header -->
     <header class="header">
         <a href="index.html" class="logo">Port<span>folio.</span></a>
         <i class="bx bx-menu" id="menu-icon"></i>
@@ -32,22 +28,18 @@
         </nav>
     </header>
 
-    <!-- Project Details Section -->
     <section class="project-details">
         
-        <!-- Navigation Back -->
         <a href="index.html#portfolio" class="back-btn">
             <i class='bx bx-left-arrow-alt'></i> Back to Projects
         </a>
 
-        <!-- Title Area -->
         <div class="project-header">
             <h1 class="heading" style="text-align: left;">Perishable Demand Predictor</h1>
             <div class="project-meta">
                 <span>Python</span>
                 <span>XGBoost</span>
                 <span>Streamlit</span>
-                <!--<span>Google Gemini AI</span>-->
                 <span>Business Intelligence</span>
             </div>
         </div>
@@ -58,10 +50,8 @@
             <img src="img/perishableapp.png" alt="perishable demand" style="width: 100%; height: auto; display: block;">
         </div>
 
-        <!-- MAIN CONTENT -->
         <div class="project-content">
             
-            <!-- 1. Overview -->
             <h2>Overview</h2>
             <p>
                 FrostMart UK faces a critical challenge, managing perishable goods efficiently. 
@@ -74,24 +64,19 @@
                 due to product wastage and overstocking, representing approximately 4.77% of total revenue.
             </p>
             
-            <!-- 2. Key Features -->
             <h2>Key Features</h2>
             <ul class="feature-list">
-                <li><i class='bx bx-check-circle'></i> <strong>XGBoost Regressor:</strong> High-accuracy demand forecasting (R² 0.9959).</li>
+                <li><i class='bx bx-check-circle'></i> <strong>XGBoost Regressor:</strong> High-accuracy demand forecasting (R² 0.9983).</li>
                 <li><i class='bx bx-check-circle'></i> <strong>Interactive Dashboard:</strong> Streamlit app with tabs for single product, batch, and model insights.</li>
-               <!--<li><i class='bx bx-check-circle'></i> <strong>AI Chat Assistant:</strong> Integrated Google Gemini chatbot for querying sales and wastage data.</li>--> 
-                <li><i class='bx bx-check-circle'></i> <strong>Automated Procurement:</strong> Human-readable order recommendations with buffer suggestions.</li>
-                <!--<li><i class='bx bx-check-circle'></i> <strong>Batch Processing:</strong> Capability to upload CSVs for bulk forecasting.</li>-->
-            </ul>
+               <li><i class='bx bx-check-circle'></i> <strong>Automated Procurement:</strong> Human-readable order recommendations with buffer suggestions.</li>
+                </ul>
 
-            <!-- 3. Model Performance -->
             <h2>Model Performance & Evaluation</h2>
             <p>
                 I evaluated multiple algorithms to find the optimal balance between speed and accuracy. 
-                The <strong>Gradient Boosting Regressor (XGBoost)</strong> emerged as the superior model.
+                The <strong>Gradient Boosting Regressor (XGBoost)</strong> was selected as the final model due to having the lowest error rate (MAPE).
             </p>
             
-            <!-- TABLE WRAPPED FOR MOBILE SCROLLING -->
             <div class="table-container">
                 <table class="model-table">
                     <thead>
@@ -106,30 +91,29 @@
                     <tbody>
                         <tr>
                             <td>Linear Regression</td>
-                            <td>0.63</td>
-                            <td>21.5</td>
-                            <td>19.8</td>
-                            <td>5.4%</td>
+                            <td>0.8468</td>
+                            <td>446.77</td>
+                            <td>310.66</td>
+                            <td>23.16%</td>
                         </tr>
                         <tr>
                             <td>Random Forest</td>
-                            <td>0.82</td>
-                            <td>15.3</td>
-                            <td>12.7</td>
-                            <td>3.2%</td>
+                            <td>0.9993</td>
+                            <td>29.92</td>
+                            <td>12.30</td>
+                            <td>0.86%</td>
                         </tr>
                         <tr>
-                            <td style="background: #323946; border: 2px solid var(--main-color);"><strong>Gradient Boosting</strong></td>
-                            <td style="background: #323946; border: 2px solid var(--main-color);"><strong>0.9959</strong></td>
-                            <td style="background: #323946; border: 2px solid var(--main-color);"><strong>75.28</strong></td>
-                            <td style="background: #323946; border: 2px solid var(--main-color);"><strong>16.27</strong></td>
-                            <td style="background: #323946; border: 2px solid var(--main-color);"><strong>0.86%</strong></td>
+                            <td style="background: #323946; border: 2px solid var(--main-color);"><strong>XGBoost</strong></td>
+                            <td style="background: #323946; border: 2px solid var(--main-color);"><strong>0.9983</strong></td>
+                            <td style="background: #323946; border: 2px solid var(--main-color);"><strong>46.94</strong></td>
+                            <td style="background: #323946; border: 2px solid var(--main-color);"><strong>14.58</strong></td>
+                            <td style="background: #323946; border: 2px solid var(--main-color);"><strong>0.84%</strong></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <!-- 4. Deployment Links -->
             <div class="portfolio-links" style="margin: 3rem 0;">
                 <a href="https://github.com/edwinaabam/FrostUK-" target="_blank" class="btn-code">
                     <i class='bx bxl-github'></i> View Source Code
@@ -139,16 +123,12 @@
                 </a>
             </div>
 
-            <!-- =========================================== -->
-            <!-- FULL BUSINESS REPORT SECTION -->
-            <!-- =========================================== -->
             <div class="report-section">
                 <h2 class="report-title">FrostMart UK Business Insights Report</h2>
                 <div class="report-meta">
                     Prepared by: Edwina B. Abam, Business Intelligence Specialist | Date: November 2025
                 </div>
 
-                <!-- Executive Summary -->
                 <h3 class="report-subtitle">1. Executive Summary</h3>
                 <p>
                     This report provides a comprehensive analysis of FrostMart UK's operational performance for the fiscal year 2024-2025, with a primary focus on sales, product wastage, and the evaluation of my newly developed predictive demand forecasting model. 
@@ -157,10 +137,9 @@
                     My analysis reveals that while FrostMart UK maintains a strong market position with an estimated annual revenue of <strong>£255,716,700.00</strong>, significant financial inefficiencies exist. The most critical issue identified is product wastage, which currently results in an estimated annual loss of <strong>£12,200,000.00</strong>, representing approximately 4.8% of total revenue. The Bakery category and the London region have been identified as the primary contributors to this loss.
                 </p>
                 <p>
-                    In response, I have successfully developed and deployed a machine learning model for demand forecasting, which demonstrates exceptional accuracy with an R-squared value of <strong>0.9959</strong> and a Mean Absolute Percentage Error of just <strong>0.86%</strong>. The implementation of this tool presents a transformative opportunity for FrostMart UK. By leveraging its predictive capabilities, I project a potential reduction in overall wastage by <strong>30% to 40%</strong> and a corresponding revenue uplift of <strong>10% to 20%</strong> through improved stock availability and optimized promotions.
+                    In response, I have successfully developed and deployed a machine learning model for demand forecasting, which demonstrates exceptional accuracy with an R-squared value of <strong>0.9983</strong> and a Mean Absolute Percentage Error of just <strong>0.84%</strong>. The implementation of this tool presents a transformative opportunity for FrostMart UK. By leveraging its predictive capabilities, I project a potential reduction in overall wastage by <strong>30% to 40%</strong> and a corresponding revenue uplift of <strong>10% to 20%</strong> through improved stock availability and optimized promotions.
                 </p>
 
-                <!-- Financial KPIs -->
                 <div class="kpi-grid">
                     <div class="kpi-card">
                         <h4>Annual Revenue</h4>
@@ -176,11 +155,10 @@
                     </div>
                     <div class="kpi-card">
                         <h4>Model Accuracy</h4>
-                        <span>99.6%</span>
+                        <span>99.8%</span>
                     </div>
                 </div>
 
-                <!-- Financial Performance Analysis -->
                 <h3 class="report-subtitle">2. Financial Performance Analysis</h3>
                 <p>
                     A detailed examination of FrostMart UK's financial data highlights a robust revenue stream counterbalanced by significant operational costs, primarily driven by product spoilage and overstocking. The direct financial impact of wastage represents a substantial inefficiency within our supply chain. 
@@ -189,7 +167,6 @@
                     Further analysis into our marketing expenditure reveals areas for optimization. The correlation between marketing spend and sales volume is currently very low at <strong>0.041</strong>, indicating that current marketing strategies are not effectively translating into proportional sales growth. Conversely, my analysis of promotional activities shows a clear and positive impact; a <strong>25% discount</strong> has been proven to generate an average sales uplift of <strong>51.3%</strong>.
                 </p>
 
-                <!-- Product Category Performance -->
                 <h3 class="report-subtitle">3. Product Category Performance</h3>
                 <p>
                     Analysis at the product category level reveals significant performance disparities:
@@ -201,7 +178,6 @@
                     <li><strong>Beverages:</strong> Lowest risk profile with an average shelf life of 216.8 days, acting as a logistical buffer.</li>
                 </ul>
 
-                <!-- Regional Sales and Wastage Trends -->
                 <h3 class="report-subtitle">4. Regional Sales and Wastage Trends</h3>
                 <p>
                     Geographical analysis indicates that the <strong>London region</strong> is the largest contributor to our overall wastage problem despite high sales volume. The high population density and sales velocity are coupled with logistical complexities, resulting in a wastage rate considerably higher than the national average. This makes London the top priority for the rollout of new inventory management tools.
@@ -210,22 +186,19 @@
                     My analysis also incorporated environmental factors. Average temperature and rainfall were identified as significant predictors in my demand model, confirming that weather patterns have a measurable impact on consumer purchasing behavior.
                 </p>
 
-                <!-- Demand Forecasting Model Evaluation -->
                 <h3 class="report-subtitle">5. Demand Forecasting Model Evaluation</h3>
                 <p>
-                    To address the core challenge of product wastage, I developed a sophisticated demand forecasting model. The model achieved an R-squared (R²) value of <strong>0.9959</strong>, indicating it can explain 99.59% of the variability in sales demand. Furthermore, the accuracy is confirmed by a MAPE of <strong>0.86%</strong>.
+                    To address the core challenge of product wastage, I developed a sophisticated demand forecasting model. The final XGBoost model achieved an R-squared (R²) value of <strong>0.9983</strong>, indicating it can explain over 99.8% of the variability in sales demand. Furthermore, the accuracy is confirmed by an exceptionally low MAPE of <strong>0.84%</strong>.
                 </p>
                 <p>
                     The most influential predictors identified by the model are, in order of importance: <strong>Shelf Life, Average Temperature, Marketing Spend, Product Category, and Rainfall</strong>.
                 </p>
 
-                <!-- Supply Chain and Inventory Insights -->
                 <h3 class="report-subtitle">6. Supply Chain and Inventory Insights</h3>
                 <p>
                     The findings confirm that shelf life is the single most important predictor of wastage. For short shelf-life products (Bakery, Produce), a just-in-time replenishment approach is imperative, now feasible due to the model's high accuracy. For long-shelf-life products, we can maintain strategic inventory levels to hedge against supply chain disruptions.
                 </p>
 
-                <!-- Strategic Recommendations -->
                 <h3 class="report-subtitle">7. Strategic Recommendations</h3>
                 
                 <div class="recommendation-box">
@@ -257,19 +230,15 @@
                     FrostMart UK is at a pivotal juncture. The annual loss of £12.2M is a clear signal for urgent action. The development and successful validation of my advanced demand forecasting model provides a powerful, data-driven solution. By embracing these changes, I realistically expect to reduce waste by up to 40% and increase revenue by up to 20%. The successful execution of these strategies will not only reclaim millions in lost profit but will also solidify FrostMart UK's position as a technologically advanced leader in the grocery sector.
                 </p>
             </div>
-            <!-- End of Report -->
-
-        </div>
+            </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-bottom">
             <p>© Edwina B. Abam All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="main.js"></script>
 </body>
 </html>
